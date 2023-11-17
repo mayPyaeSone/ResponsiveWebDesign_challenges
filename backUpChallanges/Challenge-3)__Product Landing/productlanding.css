@@ -1,0 +1,240 @@
+body {
+    width: 100%;
+    height: auto;
+    background: #eeeeee;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+}
+
+#header {
+    position: fixed;
+    top: 0;
+    overflow: auto;
+    width: 100%;
+    background-color: #eeeeee;
+}
+
+#header #header-img {
+    width: 250px;
+    height: 50px;
+    margin-left: 0px;
+    margin-top: 15px;
+    border-radius: 4px;
+    float: left;
+}
+
+#header #nav-bar {
+    margin: 10px 10px 10px;
+    float: right;
+    color: white;
+    width: 500px;
+    height: 50px;
+    overflow: visible;
+}
+
+#header #nav-bar .nav-link {
+    float: right;
+    padding: 12px;
+    padding-right: 10%;
+    color: black;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+main {
+    margin-top: 100px;
+}
+
+#form {
+    text-align: center;
+}
+
+#form #email {
+    width: 250px;
+    height: 25px;
+    border: 1px solid #1b1b32CC;
+    padding-left: 10px;
+}
+
+#form a {
+    position: absolute;
+    left: 0px;
+    top: -60px;
+    border: solid 1px red;
+}
+
+#form #submit {
+    margin-top: 20px;
+    width: 150px;
+    height: 25px;
+    padding: 0 20px;
+    font-size: 1rem;
+    font-weight: bolder;
+    text-align: center;
+    color: black;
+    border: 1px solid #1b1b32CC;
+    background-color: yellow;
+}
+
+#features {
+    margin-top: 10px;
+}
+
+#feature {
+    margin-top: 10px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+#feature #iconbox {
+    width: 20%;
+    height: 150px;
+    flex-shrink: 3;
+    text-align: center;
+}
+
+#feature #textbox {
+    width: 65%;
+    height: 150px;
+    flex-shrink: 1;
+}
+
+#feature #textbox #text {
+    font-size: 20px;
+}
+
+#videowrapper {
+    margin-top: 10px;
+    margin: auto;
+    text-align: center;
+}
+
+#videowrapper #video {
+    margin-top: 10px;
+    margin: auto;
+    text-align: center;
+}
+
+#box-container {
+    margin-top: 50px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+}
+
+#box-container #box-1 {
+    margin: 10px;
+    width: 300px;
+    height: 300px;
+    border: 1px solid #1b1b32CC;
+    text-align: center;
+}
+
+#box-container #box-1 .heading {
+    padding-top: 15px;
+    text-transform: uppercase;
+    font-weight: 700;
+    height: 50px;
+    width: 100%;
+    background-color: #ddd;
+    text-align: center;
+}
+
+#box-container #box-1 .submit {
+    margin-top: 20px;
+    width: 100px;
+    height: 25px;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: black;
+    border: 1px solid #1b1b32CC;
+    background-color: #f1c40f;
+}
+
+#box-container #box-1 .submit:hover {
+    background-color: #bb9a18;
+}
+
+#footer {
+    display: flex;
+    width: 80%;
+    height: 75px;
+    margin: auto;
+    background-color: #ddd;
+    flex-direction: column;
+}
+
+#footer .ptc {
+    height: 30px;
+    margin-left: auto;
+    margin-top: 5px;
+}
+
+#footer .ptc #link {
+    padding-right: 10px;
+    color: black;
+    font-size: 17px;
+    text-decoration: none;
+}
+
+#footer .copyright {
+    margin-left: auto;
+}
+
+#footer .copyright #link {
+    padding-right: 10px;
+    color: black;
+    font-size: 17px;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 500px) {
+    #header #header-img {
+        float: none;
+        display: block;
+    }
+    #header #nav-bar {
+        float: none;
+        display: block;
+        width: auto;
+        height: auto;
+    }
+    #header #nav-bar .nav-link {
+        float: none;
+        display: block;
+        padding: auto;
+        padding-right: auto;
+    }
+    main {
+        margin-top: 240px;
+    }
+    #feature #iconbox {
+        display: none;
+    }
+    #feature #textbox {
+        text-align: center;
+    }
+    #box-container {
+        flex-direction: column;
+        height: 1000px;
+        align-items: center;
+    }
+    #box-container #box-1 {
+        width: 300px;
+        height: 300px;
+        border: 1px solid #1b1b32CC;
+    }
+    #footer {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 501px) and (max-width: 770px) {
+    main {
+        margin-top: 150px;
+    }
+    #footer {
+        width: 100%;
+    }
+}

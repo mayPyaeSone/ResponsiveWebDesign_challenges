@@ -1,0 +1,141 @@
+<style>
+    #main {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        overflow-y: scroll;
+        background-image: linear-gradient( 115deg, rgba(58, 58, 158, 0.8), rgba(136, 136, 206, 0.7));
+    }
+    
+    #main-section {
+        font-family: 'Poppins', sans-serif;
+        color: white;
+        line-height: 80%;
+    }
+    
+    #survey-form {
+        background: #1b1b32CC;
+        margin-left: auto;
+        margin-right: auto;
+        width: 720px;
+        height: auto;
+        margin-top: 30px;
+        border-radius: 10px;
+    }
+    
+    input[type="text"] {
+        width: 632px;
+        height: 38px;
+        border-radius: 5px;
+        border: 1px solid #1b1b32CC;
+        padding-left: 10px;
+    }
+    
+    input[type="email"] {
+        width: 632px;
+        height: 38px;
+        border-radius: 5px;
+        border: 1px solid #1b1b32CC;
+        padding-left: 10px;
+    }
+    
+    input[type="number"] {
+        width: 632px;
+        height: 38px;
+        border-radius: 5px;
+        border: 1px solid #1b1b32CC;
+        padding-left: 10px;
+    }
+    
+    #dropdown {
+        width: 632px;
+        height: 38px;
+        border-radius: 5px;
+        border: 1px solid #1b1b32CC;
+        font-size: 15px;
+        padding-left: 10px;
+    }
+    
+    label {
+        display: block;
+        padding-left: 40px;
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    
+    input,
+    input::-webkit-input-placeholder {
+        font-size: 15px;
+    }
+    
+    textarea {
+        width: 632px;
+        height: 38px;
+        border-radius: 5px;
+        border: 1px solid #1b1b32CC;
+        padding-left: 10px;
+    }
+    
+     ::placeholder {
+        font-size: 15px;
+    }
+</style>
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Documeny</title>
+</head>
+
+<body>
+    <main>
+        <div id="main">
+
+            <div id="main-section">
+                <h1 style="padding-top:  50px; 
+                font-size: 2rem;
+                font-weight: 400;text-align: center;
+                ">freeCodeCamp Survey Form</h1>
+                <p style="text-align: center;">Thank you for taking the time to help us improve the platform</p>
+                <div id="survey-form">
+                    <form action="">
+                        <label id="name-lable" style="padding-top: 40px;" for="name">Name</label>
+                        <div style="padding-left: 40px; font-size: 20px;"><input type="text" placeholder=" Enter your name" required></div>
+                        <label style="padding-top: 40px;" id="email-lable" for="email">Email</label>
+                        <div style="padding-left: 40px; font-size: 20px;"> <input type="email" placeholder=" Email" required></div>
+                        <label style="padding-top: 40px;" id="age-lable" for="age">Age (optional)</label>
+                        <div style=" padding-left: 40px; font-size: 20px;"><input type="number" min="10" max="99" class="form-control" placeholder=" Age" required></div>
+                        <label style="padding-top: 40px;" id="role-lable" for="role">Which option best describes your current role?</label>
+                        <div style=" padding-left: 40px; font-size: 20px;">
+                            <select id="dropdown" name="role" class="form-control" required="">
+                             <option disabled="" selected="" value="">Select current role</option>
+                             <option value="student">Student</option>
+                             <option value="job">Full Time Job</option>
+                             <option value="learner">Full Time Learner</option>
+                             <option value="preferNo">Prefer not to say</option>
+                             <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div style="padding-top: 40px;">
+                            <label id="name-lable" for="name">Would you recommend freeCodeCamp to a friend?</label>
+                            <label for="definitely"> <input id="definitely" type="radio" name="recommend" checked>Definitely</label> </br>
+                            <label for="maybe"><input id="maybe" type="radio" name="recommend"> Maybe</label> </br>
+                            <label for="not-sure"><input id="not-sure" type="radio" name="recommend"> Not sure</label>
+                        </div>
+
+                        <div style="padding-top: 40px; padding-left: 40px; font-size: 20px; padding-bottom: 20px;">
+                            <label style="padding-left: 0px;" for="story">Any comments or suggestions?</label>
+                            <textarea name="textarea" placeholder="Enter your comment here..."></textarea>
+                        </div>
+
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+</body>
+
+</html>

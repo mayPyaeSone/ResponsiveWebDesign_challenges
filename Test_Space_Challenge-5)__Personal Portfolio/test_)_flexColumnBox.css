@@ -1,0 +1,53 @@
+#main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: #000;
+}
+
+#box1 {
+    width: 500px;
+    height: 100px;
+    background-color: hotpink;
+}
+
+#box2 {
+    width: 500px;
+    height: 100px;
+    background-color: blanchedalmond;
+}
+
+#box3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 500px;
+    height: 100px;
+    background-color: cyan;
+}
+
+#projects {
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    background-color: #45567d;
+}
+
+#showall {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 150px;
+    height: 50px;
+    /* margin: 0 auto; */
+    text-align: center;
+    background-color: #000;
+    background-image: linear-gradient( 62deg, #3a3d40 0%, #181719 100%);
+}
+
+#showall a {
+    text-align: center;
+    color: white;
+    text-decoration: none;
+}

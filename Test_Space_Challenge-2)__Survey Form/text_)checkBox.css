@@ -1,0 +1,58 @@
+grid_newsletter {
+    background: #ffeb3a;
+}
+
+.grid_newsletter .text {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 41px;
+}
+
+.grid_newsletter input {
+    width: 380px;
+    border-top: transparent;
+    border-left: transparent;
+    border-right: transparent;
+    margin-left: 20px;
+    border-bottom: 2px solid black;
+    padding-left: 0px;
+}
+
+.grid_newsletter input[type="checkbox"] {
+    width: 22px;
+    height: 22px;
+    border: 2px solid black;
+    text-align: center;
+    display: inline;
+}
+
+.grid_newsletter .checkbox_terms {
+    margin-top: 23px;
+    display: block;
+}
+
+.grid_newsletter .content {
+    text-align: center;
+    padding: 70px 55px 30px 60px;
+    display: inline;
+}
+
+.grid_newsletter .text_box_newsletter {
+    background: white;
+    width: 495px;
+    height: 90px;
+    text-align: center;
+    margin-top: 27px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.grid_newsletter .text_box_newsletter p {
+    padding-top: 39px;
+    padding-bottom: 35px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: 0.100em;
+}

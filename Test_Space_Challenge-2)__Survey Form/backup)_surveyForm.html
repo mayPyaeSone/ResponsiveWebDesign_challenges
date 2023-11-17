@@ -1,0 +1,235 @@
+<style>
+    #main {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        overflow-y: scroll;
+        background-image: linear-gradient( 115deg, rgba(58, 58, 158, 0.8), rgba(136, 136, 206, 0.7));
+    }
+    
+    #main-section {
+        font-family: 'Poppins', sans-serif;
+        color: white;
+        line-height: 80%;
+    }
+    
+    #survey-form {
+        background: #1b1b32CC;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 0px;
+        width: 720px;
+        height: auto;
+        margin-top: 30px;
+        border-radius: 10px;
+    }
+    
+    input[type="text"] {
+        width: 632px;
+        height: 38px;
+        border-radius: 5px;
+        border: 1px solid #1b1b32CC;
+        padding-left: 10px;
+    }
+    
+    input[type="email"] {
+        width: 632px;
+        height: 38px;
+        border-radius: 5px;
+        border: 1px solid #1b1b32CC;
+        padding-left: 10px;
+    }
+    
+    input[type="number"] {
+        width: 632px;
+        height: 38px;
+        border-radius: 5px;
+        border: 1px solid #1b1b32CC;
+        padding-left: 10px;
+    }
+    
+    input[type="submit"] {
+        width: 632px;
+        height: 38px;
+        border: 0;
+        line-height: 2.5;
+        padding: 0 20px;
+        font-size: 1rem;
+        text-align: center;
+        color: #f3f3f3;
+        background-color: #37af65;
+    }
+    
+    #dropdown {
+        width: 632px;
+        height: 38px;
+        border-radius: 5px;
+        border: 1px solid #1b1b32CC;
+        font-size: 15px;
+        padding-left: 10px;
+    }
+    
+    label {
+        display: block;
+        padding-left: 40px;
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    
+    input,
+    input::-webkit-input-placeholder {
+        font-size: 15px;
+    }
+    
+    textarea {
+        width: 632px;
+        height: 100px;
+        border: 1px solid #1b1b32CC;
+        padding-left: 10px;
+    }
+    
+     ::placeholder {
+        padding-top: 8px;
+        font-size: 17px;
+    }
+    
+    @media (max-width: 700px) {
+        #main {
+            width: 100%;
+            height: 100%;
+            position: fixed;
+            overflow-y: scroll;
+            background-image: linear-gradient( 115deg, rgba(58, 58, 158, 0.8), rgba(136, 136, 206, 0.7));
+        }
+        #main-section {
+            font-family: 'Poppins', sans-serif;
+            color: white;
+            line-height: 80%;
+        }
+        #survey-form {
+            background: #1b1b32CC;
+            margin-left: auto;
+            margin-right: auto;
+            width: 540px;
+            height: auto;
+            margin-top: 30px;
+            margin-bottom: 0px;
+            border-radius: 5px;
+        }
+        input[type="text"] {
+            width: 452px;
+            height: 38px;
+            border-radius: 5px;
+            padding-left: 10px;
+        }
+        input[type="email"] {
+            width: 452px;
+            height: 38px;
+            border-radius: 5px;
+            padding-left: 10px;
+        }
+        input[type="number"] {
+            width: 452px;
+            height: 38px;
+            border-radius: 5px;
+            border: 1px solid #1b1b32CC;
+            padding-left: 10px;
+        }
+        input,
+        input::-webkit-input-placeholder {
+            font-size: 15px;
+        }
+        #dropdown {
+            width: 452px;
+            height: 38px;
+            border-radius: 5px;
+            border: 1px solid #1b1b32CC;
+            font-size: 15px;
+            padding-left: 10px;
+        }
+    }
+</style>
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Documeny</title>
+</head>
+
+<body>
+    <main>
+        <div id="main">
+
+            <div id="main-section">
+                <h1 style="padding-top:  50px; font-size: 2rem; font-weight: 400;text-align: center;">freeCodeCamp Survey Form</h1>
+                <p style="text-align: center;">Thank you for taking the time to help us improve the platform</p>
+                <div id="survey-form">
+                    <form action="">
+
+                        <label id="name-lable" style="padding-top: 40px;" for="name">Name</label>
+                        <div style="padding-left: 40px; font-size: 20px;"><input type="text" placeholder=" Enter your name" required></div>
+                        <label style="padding-top: 40px;" id="email-lable" for="email">Email</label>
+                        <div style="padding-left: 40px; font-size: 20px;"> <input type="email" placeholder=" Email" required></div>
+                        <label style="padding-top: 40px;" id="age-lable" for="age">Age (optional)</label>
+                        <div style=" padding-left: 40px; font-size: 20px;"><input type="number" min="10" max="99" class="form-control" placeholder=" Age" required></div>
+                        <label style="padding-top: 40px;" id="role-lable" for="role">Which option best describes your current role?</label>
+                        <div style=" padding-left: 40px; font-size: 20px;">
+                            <select id="dropdown" name="role" class="form-control" required="">
+                             <option disabled="" selected="" value="">Select current role</option>
+                             <option value="student">Student</option>
+                             <option value="job">Full Time Job</option>
+                             <option value="learner">Full Time Learner</option>
+                             <option value="preferNo">Prefer not to say</option>
+                             <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <label style="padding-top: 40px;" id="name-lable" for="name">Would you recommend freeCodeCamp to a friend?</label>
+                        <label for="definitely"> <input id="definitely" type="radio" name="recommend" checked>Definitely</label> </br>
+                        <label for="maybe"><input id="maybe" type="radio" name="recommend"> Maybe</label> </br>
+                        <label for="not-sure"><input id="not-sure" type="radio" name="recommend"> Not sure</label>
+
+                        <div style="padding-top: 40px; padding-left: 40px; font-size: 20px;">What is your favorite feature of freeCodeCamp?</div>
+                        <div style="padding-top: 10px; padding-left: 40px; font-size: 20px;">
+                            <select id="dropdown" name="role" class="form-control" required="">
+                             <option disabled="" selected="" value="">Select an option</option>
+                             <option value="student">Challenges</option>
+                             <option value="job">Projects</option>
+                             <option value="learner">Community</option>
+                             <option value="preferNo">Open Source</option>
+                            </select>
+                        </div>
+                        <div style="padding-top: 40px; padding-left: 40px; font-size: 20px;">What would you like to see improved? (Check all that apply)
+                        </div>
+                        <div style="padding-top: 10px;font-size: 20px;">
+                            <label for="definitely"><input id="definitely" type="checkbox" name="definitely" checked> Front-end Projects</label> </br>
+                            <label for="back-end"><input id="back-end" type="checkbox" name="back-end"> Back-end Projects</label> </br>
+                            <label for="data-visualization"><input id="data-visualization" type="checkbox" name="data-visualization"> Data Visualization</label> </br>
+                            <label for="challenges"><input id="challenges" type="checkbox" name="challenges"> Challenges </label> </br>
+                            <label for="open-source"><input id="open-source" type="checkbox" name="open-source"> Open Source Community</label> </br>
+                            <label for="glitter-help"><input id="glitter-help" type="checkbox" name="glitter-help"> Gitter help rooms</label> </br>
+                            <label for="videos"><input id="videos" type="checkbox" name="videos"> Videos</label></br>
+                            <label for="city-meetups"><input id="city-meetups" type="checkbox" name="city-meetups"> City Meetups</label> </br>
+                            <label for="wiki"><input id="wiki" type="checkbox" name="wiki"> Wiki</label> </br>
+                            <label for="forum"><input id="forum" type="checkbox" name="forum"> Forum</label> </br>
+                            <label for="additional"><input id="additional" type="checkbox" name="additional"> Additional Courses</label> </br>
+                        </div>
+                        <div style="padding-top: 30px; padding-left: 40px; font-size: 20px;">
+                            <label style="padding-left: 0px;" for="story">Any comments or suggestions?</label>
+                            <textarea name="textarea" placeholder="Enter your comment here..."></textarea>
+                        </div>
+                        <div style="padding-top: 30px; padding-left: 40px; font-size: 20px; padding-bottom: 100px; ">
+                            <input type="submit" value="Submit">
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+</body>
+
+</html>

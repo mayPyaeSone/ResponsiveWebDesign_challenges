@@ -1,0 +1,12 @@
+#container {
+    position: relative;
+    background-color: cyan;
+    display: flex;
+    flex-direction: column;
+}
+
+#redBlock {
+    width: 100%;
+    height: 33.33%;
+    background-color: red;
+}

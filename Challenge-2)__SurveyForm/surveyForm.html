@@ -1,0 +1,76 @@
+<head>
+    <link rel="stylesheet" href="surveyForm.css">
+    <title>Documeny</title>
+</head>
+
+<body>
+    <main>
+        <div id="main">
+            <h1 id="title">freeCodeCamp Survey Form</h1>
+            <p id="description">Thank you for taking the time to help us improve the platform</p>
+
+            <form action="" id="survey-form">
+                <label id="name-label" for="name">Name</label>
+                <div style="padding-left: 40px; font-size: 20px;"><input id="name" type="text" placeholder=" Enter your name" required></div>
+                <label id="email-label" for="email">Email</label>
+                <div style="padding-left: 40px; font-size: 20px;"> <input id="email" type="email" placeholder="Enter your Email" required></div>
+                <label id="number-label" for="number">Age (optional)</label>
+                <div style=" padding-left: 40px; font-size: 20px;"><input id="number" type="number" min="10" max="99" class="form-control" placeholder=" Age" required></div>
+                <label style="padding-top: 40px;" id="role-lable" for="role">Which option best describes your current role?</label>
+                <div style=" padding-left: 40px; font-size: 20px;">
+                    <select id="dropdown" name="role" class="form-control" required="">
+                             <option disabled="" selected="" value="">Select current role</option>
+                             <option value="student">Student</option>
+                             <option value="job">Full Time Job</option>
+                             <option value="learner">Full Time Learner</option>
+                             <option value="preferNo">Prefer not to say</option>
+                             <option value="other">Other</option>
+                            </select>
+                </div>
+
+                <label style="padding-top: 40px;" id="name-lable" for="name">Would you recommend freeCodeCamp to a friend?</label>
+                <label for="definitely"> <input id="definitely" type="radio" name="recommend" value="definitely" checked>Definitely</label> </br>
+                <label for="maybe"><input id="maybe" type="radio" name="recommend" value="maybe"> Maybe</label> </br>
+                <label for="not-sure"><input id="not-sure" type="radio" name="recommend" value="not sure"> Not sure</label>
+
+                <div style="padding-top: 40px; padding-left: 40px; font-size: 20px;">What is your favorite feature of freeCodeCamp?</div>
+                <div style="padding-top: 10px; padding-left: 40px; font-size: 20px;">
+                    <select id="dropdown" name="role" class="form-control" required="">
+                             <option disabled="" selected="" value="">Select an option</option>
+                             <option value="student">Challenges</option>
+                             <option value="job">Projects</option>
+                             <option value="learner">Community</option>
+                             <option value="preferNo">Open Source</option>
+                            </select>
+                </div>
+                <div style="padding-top: 40px; padding-left: 40px; font-size: 20px;">What would you like to see improved? (Check all that apply)
+                </div>
+                <div style="padding-top: 10px;font-size: 20px;">
+                    <label for="definitely"><input id="definitely" type="checkbox" name="definitely" value="Front end Project" checked> Front-end Projects</label> </br>
+                    <label for="back-end"><input id="back-end" type="checkbox" name="back-end" value="back-end project"> Back-end Projects</label> </br>
+                    <label for="data-visualization"><input id="data-visualization" type="checkbox" name="data-visualization" value="data visualization"> Data Visualization</label> </br>
+                    <label for="challenges"><input id="challenges" type="checkbox" name="challenges" value="challenges"> Challenges </label> </br>
+                    <label for="open-source"><input id="open-source" type="checkbox" name="open-source" value="open source community"> Open Source Community</label> </br>
+                    <label for="glitter-help"><input id="glitter-help" type="checkbox" name="glitter-help" value="Gitter help rooms"> Gitter help rooms</label> </br>
+                    <label for="videos"><input id="videos" type="checkbox" name="videos" value="videos"> Videos</label></br>
+                    <label for="city-meetups"><input id="city-meetups" type="checkbox" name="city-meetups" value="city meetups"> City Meetups</label> </br>
+                    <label for="wiki"><input id="wiki" type="checkbox" name="wiki" value="Wiki"> Wiki</label> </br>
+                    <label for="forum"><input id="forum" type="checkbox" name="forum" value="forum"> Forum</label> </br>
+                    <label for="additional"><input id="additional" type="checkbox" name="additional" value="additional course"> Additional Courses</label> </br>
+                </div>
+                <div style="padding-top: 30px; padding-left: 40px; font-size: 20px;">
+                    <label style="padding-left: 0px;" for="story">Any comments or suggestions?</label>
+                    <textarea name="textarea" placeholder="Enter your comment here..."></textarea>
+                </div>
+                <div style="padding-top: 30px; padding-left: 40px; font-size: 20px; padding-bottom: 100px; ">
+                    <input id="submit" type="submit" value="Submit">
+                </div>
+
+            </form>
+
+
+        </div>
+
+    </main>
+
+</body>

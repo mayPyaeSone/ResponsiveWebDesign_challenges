@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    width: 100%;
+    background: lightblue;
+    padding: 10px;
+    margin-bottom: 10px;
+    position: fixed;
+    height: 30px;
+    opacity: 0.75;
+}
+
+#ctn {
+    position: relative;
+    border: solid 1px green;
+    height: 60px;
+}
+
+#ctn a {
+    position: absolute;
+    left: 0px;
+    top: -60px;
+    border: solid 1px red;
+}
+
+h2 {
+    border: solid 1px blue;
+}
+
+#ctn .target-label {
+    position: absolute;
+    left: 0px;
+    /* anchor offset + header height + header padding + header margins */
+    top: 0px;
+    margin: 0;
+}

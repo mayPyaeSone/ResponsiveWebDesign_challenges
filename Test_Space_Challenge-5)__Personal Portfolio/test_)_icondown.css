@@ -1,0 +1,47 @@
+.showall {
+    width: 150px;
+    height: 50px;
+    margin: 0 auto;
+    background-color: #3a3d40;
+}
+
+.showall a {
+    color: white;
+    text-decoration: none;
+}
+
+.showall:hover {
+    background-color: rgb(189, 52, 52);
+}
+
+.showall .icon {
+    position: absolute;
+    /*  margin-top: -3px;
+    margin-left: 2px; */
+    font-size: 18px;
+    font-weight: lighter;
+}
+
+.showall:hover .icon {
+    transform: translateX(3px);
+}
+
+.icon_2 {
+    background-color: yellow;
+}
+
+.showall:hover .icon_2 {
+    position: relative;
+    left: 40px;
+    top: 2px;
+    transform: translateX(5px);
+}
+
+.icon_3 {
+    background-color: cyan;
+}
+
+.showall:hover .icon_3 {
+    position: relative;
+    top: 5px;
+}
